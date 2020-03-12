@@ -1,0 +1,17 @@
+rofi.font: Fira Code 16
+rofi.modi: drun,window,run,keys
+#rofi.sidebar-mode:      true
+#rofi.width:  720
+rofi.padding: 50
+rofi.color-enabled:     true
+rofi.lines:             10
+rofi.separator-style:   solid
+#rofi.line-margin:       5
+#rofi.disable-history:   true
+rofi.terminal: kitty
+#rofi.hide-scrollbar: true
+##rofi.columns: 3
+rofi.show-icons: true
+rofi.fake-transparency: true
+rofi.show: drun
+rofi.theme: /home/kishan/.config/rofi/themes/Slate.rasi
