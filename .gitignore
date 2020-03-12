@@ -15,3 +15,5 @@ systemd/
 user-dirs.dirs
 user-dirs.locale
 xfce4/
+pamac/
+dconf/
