@@ -5,12 +5,10 @@ bspc rule -r "*"
 killall picom
 killall sxhkd
 killall dunst
-# killall feh
+killall feh
 
-xrdb ~/config/xrdb/color &
 
 xrdb -load ~/.Xresources &
-. "${HOME}/.config/xrdb/color"
 
 sxhkd &
 dunst &
