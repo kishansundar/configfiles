@@ -2,10 +2,11 @@
 # Autostart
 bspc rule -r "*"
 
-killall picom
-killall sxhkd
-killall dunst
-killall feh
+pkill picom
+pkill polybar
+pkill sxhkd
+pkill dunst
+pkill feh
 
 
 xrdb -load ~/.Xresources &
@@ -58,9 +59,9 @@ bspc config focused_border_color "#bd5fe9"
 
 
 # Borders and Gaps
-bspc config border_radius       20
+bspc config border_radius       10
 bspc config border_width         1
-bspc config window_gap          10
+bspc config window_gap          5
 
 bspc config bottom_padding 0
 bspc config top_padding 25
@@ -74,10 +75,8 @@ bspc config click_to_focus       true
 #bspc config external_rules_command "$(which /home/kishan/.config/bspwm/bspwm-rules)"
 
 bspc rule -a firefox desktop="web"
-# bspc rule -a kitty state=pseudo_tiled
+bspc rule -a urxvt state=floating follow=on
 bspc rule -a mpv desktop="media" state=floating follow=on
-#bspc rule -a code desktop="code" state=floating follow=on
-#bspc rule -a codium desktop="code" state=floating follow=on
-#bspc rule -a vscodium desktop="code" state=floating follow=on
 bspc rule -a discord desktop="media" state=pseudo_tiled follow=off
 bspc rule -a feh state=floating
+
