@@ -23,7 +23,7 @@ xsetroot -cursor_name left_ptr &
 xset r rate 400 44
 
 
-bspc monitor -d web code media edit graphics other
+bspc monitor -d web code media article lab
 
 # Global Settings
 bspc config automatic_scheme spiral
