@@ -26,7 +26,7 @@ xset r rate 400 44
 bspc monitor -d web code media article lab
 
 # Global Settings
-bspc config automatic_scheme spiral
+bspc config automatic_scheme alternate
 bspc config pointer_modifier shift
 bspc config pointer_action1 move
 bspc config pointer_action2 resize_side
