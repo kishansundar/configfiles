@@ -4,6 +4,7 @@ configuration {
   icon-theme:                     "Papirus";
   font:                           "Font Awesome 5 Bold 16";
   drun-display-format:            "{name}";
+
 }
 
 * {

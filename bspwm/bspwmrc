@@ -13,6 +13,7 @@ xrdb -load ~/.Xresources &
 
 sxhkd &
 dunst &
+numlockx &
 
 systemctl --user --now start greenclip.service &
 
