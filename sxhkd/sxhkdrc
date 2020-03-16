@@ -121,4 +121,4 @@ super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
 
 super + space
-	rofi -show drun -theme ~/.config/rofi/themes/Slate.rasi
+	rofi -show run
