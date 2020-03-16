@@ -125,3 +125,6 @@ super + space
 
 super + e
 	thunar
+
+super + x
+	bash ~/.config/xlock/i3lock.sh
