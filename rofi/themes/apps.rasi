@@ -37,9 +37,9 @@ mainbox {
 
 inputbar {
   expand:                         false;
-  background-color:               #00000020;
+  background-color:               #00000050;
   border-radius:                  30;
-  margin:                         4% 30% 2% 30%;
+margin:                         4% 30% 2% 30%;
   padding:                        10px;
   position:                       north;
   width:                          1px;
@@ -62,8 +62,8 @@ entry {
 
 
 listview {
-  columns: 6;
-  spacing: 4;
+  columns: 1;
+  spacing: 1;
   dynamic: false;
 }
 

@@ -8,7 +8,6 @@ pkill sxhkd
 pkill dunst
 pkill feh
 
-
 xrdb -load ~/.Xresources &
 
 sxhkd &

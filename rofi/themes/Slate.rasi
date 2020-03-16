@@ -1,5 +1,6 @@
+
 * {
-  background-color: #282C33;
+  background-color:                     #2e343f;
   border-color: #2e343f;
   text-color: #8ca0aa;
   spacing: 0;
@@ -39,5 +40,6 @@ element {
 }
 
 element selected {
-  background-color: #2e343f;
+  background-color: #000000;
 }
+
