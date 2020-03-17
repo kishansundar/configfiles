@@ -6,15 +6,16 @@ kill $(pgrep picom)
 kill $(pgrep polybar)
 kill $(pgrep sxhkd)
 kill $(pgrep dunst)
-
+kill $(pgrep autocutsel)
 
 xrdb -load ~/.Xresources &
 
 sxhkd &
 dunst &
 numlockx &
+autocutsel -s PRIMARY -fork &
 
-systemctl --user --now start greenclip.service &
+#systemctl --user --now start greenclip.service &
 
 bash ~/.config/polybar/launch.sh &
 picom --config /home/kishan/.config/picom/picom.conf -b &
