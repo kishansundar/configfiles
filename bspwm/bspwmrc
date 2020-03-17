@@ -61,7 +61,7 @@ bspc config presel_border_color     "#47ff9d"
 
 bspc rule -a "Firefox"          desktop="web" focus=on follow=on
 bspc rule -a kitty              desktop='code' state=tiled focus=on
-bspc rule -a Code - OSS         desktop='code' state=tiled split_dir=west split_ratio=0.66 focus=on
+bspc rule -a "Code - OSS"       desktop='code' state=tiled split_dir=west split_ratio=0.66 focus=on
 bspc rule -a mpv                desktop='media' state=floating border=off follow=on
 bspc rule -a discord            desktop='media' state=pseudo_tiled follow=off
 bspc rule -a "spotify"          desktop='music' state=pseudo_tiled follow=on
