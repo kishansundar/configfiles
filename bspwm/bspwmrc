@@ -69,7 +69,6 @@ bspc rule -a "Code"       desktop='code' state=tiled split_dir=west split_ratio=
 bspc rule -a "Postman"       desktop='code' state=tiled  focus=on
 bspc rule -a mpv                desktop='media' state=floating border=off follow=on
 bspc rule -a discord            desktop='media' state=pseudo_tiled follow=off
-bspc rule -a "spotify"          desktop='music' state=pseudo_tiled follow=on
 bspc rule -a "Spotify"            desktop='music' state=pseudo_tiled follow=on focus=on
 bspc rule -a "Lxappearance"       desktop='lab' state=floating center=true focus=on
 bspc rule -a URxvt              desktop='lab' state=pseudo_tiled pseudo_tiled=on focus=on follow=on
