@@ -22,6 +22,7 @@ picom --config /home/kishan/.config/picom/picom.conf -b &
 feh --bg-fill --no-fehbg ~/.config/wall.png &
 xsetroot -cursor_name left_ptr &
 xset r rate 400 44
+wal -R &
 
 bspc monitor -d web code media music file lab
 
