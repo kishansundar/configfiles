@@ -15,7 +15,7 @@ sxhkd &
 dunst &
 numlockx &
 autocutsel -s PRIMARY -fork &
-
+wal -R &
 #systemctl --user --now start greenclip.service &
 
 bash ~/.config/polybar/launch.sh &
