@@ -1,0 +1,1 @@
+/home/kishan/.local/share/omf/themes/coffeeandcode/fish_prompt.fish
