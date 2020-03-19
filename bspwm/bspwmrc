@@ -1,5 +1,6 @@
 #! /bin/sh
-# Autostart
+############## Autostart ##############
+
 bspc rule -r "*"
 
 kill $(pgrep picom)
@@ -16,7 +17,6 @@ dunst &
 numlockx &
 autocutsel -s PRIMARY -fork &
 wal -R &
-#systemctl --user --now start greenclip.service &
 
 bash ~/.config/polybar/launch.sh &
 picom --config /home/kishan/.config/picom/picom.conf -b &
@@ -24,31 +24,29 @@ feh --bg-fill --no-fehbg ~/.config/wall.png &
 xsetroot -cursor_name left_ptr &
 xset r rate 400 44
 
-bspc monitor -d web code media music file lab
+##########################################
 
 
-bspc rule -a "Firefox"          desktop="web" focus=on follow=on
-#bspc rule -a "Google-chrome"    desktop="web" focus=on follow=on
-#bspc rule -a kitty              desktop='code' state=tiled focus=on
-bspc rule -a "Code - OSS"       desktop='code' state=tiled split_dir=west split_ratio=0.66 focus=on
-bspc rule -a "code"       desktop='code' state=tiled split_dir=west split_ratio=0.66 focus=on
-bspc rule -a "Code"       desktop='code' state=tiled split_dir=west split_ratio=0.66 focus=on
-bspc rule -a "Postman"       desktop='code' state=tiled  focus=on
-bspc rule -a "Codelite"      desktop='code'  focus=on follow=on
-bspc rule -a mpv                desktop='media' state=floating border=off follow=on
-bspc rule -a discord            desktop='media' state=pseudo_tiled follow=off
-bspc rule -a "Spotify"            desktop='music' state=pseudo_tiled follow=on focus=on
-bspc rule -a "Lxappearance"       desktop='lab' state=floating center=true focus=on
-bspc rule -a URxvt              desktop='lab' state=floating focus=on follow=on
-bspc rule -a Thunar             desktop='file' state=pseudo_tiled pseudo_tiled=on focus=on follow=on
-bspc rule -a File-roller        desktop='file' state=floating center=true follow=on
-
-bspc rule -a feh                state=floating
+bspc monitor -d web code social movie music file lab	
 
 
+####### Rules #######
+
+bspc rule -a "Firefox"          	desktop="web" focus=on follow=on
+bspc rule -a "Code - OSS"       	desktop='code' state=tiled split_dir=west split_ratio=0.66 focus=on
+bspc rule -a "Postman"       		desktop='code'  focus=on
+bspc rule -a discord            	desktop='social' state=pseudo_tiled follow=on
+bspc rule -a Hexchat            	desktop='social' follow=on
+bspc rule -a mpv                	desktop='movie' state=floating border=off follow=on
+bspc rule -a "Spotify"            	desktop='music' state=pseudo_tiled follow=on focus=on
+bspc rule -a "Lxappearance"       	desktop='lab' state=floating center=true focus=on
+bspc rule -a URxvt              	desktop='lab' state=floating focus=on follow=on
+bspc rule -a Thunar             	desktop='file' state=pseudo_tiled pseudo_tiled=on focus=on follow=on
+bspc rule -a File-roller        	desktop='file' state=floating center=true follow=on
+bspc rule -a feh                	state=floating
 
 
-# Global Settings
+######## Global Settings ########
 bspc config automatic_scheme        alternate
 bspc config pointer_modifier        shift
 bspc config pointer_action1         move
@@ -58,7 +56,8 @@ bspc config pointer_action3         resize_corner
 bspc config focus_follows_pointer   true
 
 
-# Borders and Gaps
+######## Borders and Gaps ########
+
 bspc config border_radius       10
 bspc config border_width         1
 bspc config window_gap          10
@@ -77,8 +76,5 @@ bspc config single_monocle        true
 bspc config normal_border_color     ${xrdb:color7:#222}
 bspc config active_border_color     ${xrdb:color6:#222}
 bspc config focused_border_color    ${xrdb:color6:#222}
-#bspc config presel_feedback_color   ${xrdb:color7:#222}
-#bspc config presel_border_color     ${xrdb:color7:#222}
-
-
-
+bspc config presel_feedback_color   ${xrdb:color7:#222}
+bspc config presel_border_color     ${xrdb:color7:#222}

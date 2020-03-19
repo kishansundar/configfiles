@@ -1,8 +1,9 @@
 configuration {
-modi: "drun,run";
-width: 500;
+modi: "run";
+/* modi: "drun,run"; */
+/* width: 300; */
 lines: 10;
-columns: 1;
+columns: 4;
 font: "Fira Code 15";
 bw: 1;
 /*	location: 0;*/
@@ -31,7 +32,7 @@ sidebar-mode: true;
 /*	auto-select: false;*/
 /*	parse-hosts: false;*/
 /*	parse-known-hosts: true;*/
-combi-modi: "drun,run,ssh";
+/* combi-modi: "drun,run,ssh"; */
 matching: "fuzzy";
 /*	tokenize: true;*/
 /*	m: "-5";*/
@@ -40,7 +41,7 @@ matching: "fuzzy";
 /*	filter: ;*/
 /*	separator-style: "dash";*/
 /*	hide-scrollbar: false;*/
-/*	fullscreen: false;*/
+	fullscreen: true;
 /*	fake-transparency: false;*/
 /*	dpi: -1;*/
 /*	threads: 0;*/
@@ -60,7 +61,7 @@ theme: "~/.cache/wal/colors-rofi-dark.rasi";
   	color-window: "#510231, #510231, #FF974E";
 */
 /*	max-history-size: 25;*/
-combi-hide-mode-prefix: true;
+/*	combi-hide-mode-prefix: true; */
 /*	pid: "/run/user/1000/rofi.pid";*/
 /*	display-window: ;*/
 /*	display-windowcd: ;*/
