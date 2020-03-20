@@ -122,7 +122,6 @@ super + {Left,Down,Up,Right}
 
 super + space
 	rofi -show run
-
 super + e
 	thunar
 

@@ -9,7 +9,6 @@ kill $(pgrep sxhkd)
 kill $(pgrep dunst)
 kill $(pgrep autocutsel)
 
-xrdb -load ~/.Xresources &
 xrdb -load  ~/.cache/wal/colors.Xresources
 
 sxhkd &
@@ -27,7 +26,7 @@ xset r rate 400 44
 ##########################################
 
 
-bspc monitor -d web code social movie music file lab	
+bspc monitor -d web code social movie music file lab
 
 
 ####### Rules #######
