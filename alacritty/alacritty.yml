@@ -1,0 +1,78 @@
+dpi:
+  x: 96.0
+  y: 96.0
+
+# Display tabs using this many cells (changes require restart)
+tabspaces: 8
+
+# When true, bold text is drawn using the bright variant of colors.
+draw_bold_text_with_bright_colors: true
+
+font:
+  normal:
+    family: Dank Mono
+    style: Regular
+
+  italic:
+    family: Dank Mono
+    style: Italic
+
+  size: 15
+offset:
+  x: 3.0
+
+  y: -9.0
+# BEGIN ACE
+colors:
+  primary:
+    background: '0x042139'
+    foreground: '0xdaddd4'
+  cursor:
+    text: '0x042139'
+    cursor: '0xdaddd4'
+  normal:
+    black: '0x042139'
+    red: '0x597A86'
+    green: '0x3A85A0'
+    yellow: '0x6B8E94'
+    blue: '0x99A89E'
+    magenta: '0xBBC3B4'
+    cyan: '0xCDD2AA'
+    white: '0xdaddd4'
+  bright:
+    black: '0x989a94'
+    red: '0x597A86'
+    green: '0x3A85A0'
+    yellow: '0x6B8E94'
+    blue: '0x99A89E'
+    magenta: '0xBBC3B4'
+    cyan: '0xCDD2AA'
+    white: '0xdaddd4'
+# END ACE
+mouse_bindings:
+  - { mouse: Middle, action: PasteSelection }
+
+window:
+  # Window dimensions (changes require restart)
+  #
+  # Specified in number of columns/lines, not pixels.
+  # If both are `0`, this setting is ignored.
+  #dimensions:
+  #  columns: 0
+  #  lines: 0
+
+  # Window position (changes require restart)
+  #
+  # Specified in number of pixels.
+  # If the position is not set, the window manager will handle the placement.
+  #position:
+  #  x: 30
+  #  y: 1
+
+  # Window padding (changes require restart)
+  #
+  # Blank space added around the window in pixels. This padding is scaled
+  # by DPI and the specified value is always added at both opposing sides.
+  padding:
+    x: 30
+    y: 30
