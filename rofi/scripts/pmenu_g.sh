@@ -7,5 +7,5 @@ MENU="$(rofi -sep "|" -dmenu -i -p '' -location 3 -yoffset 55 -xoffset -15  -
                 *Lock) sh ~/.config/xlock/i3lock.sh;;
                 *Logout) bspc quit;;
                 *Reboot) sudo reboot ;;
-                *Shutdown) sudopoweroff
+                *Shutdown) sudo poweroff
             esac
