@@ -25,29 +25,30 @@ offset:
 # BEGIN ACE
 colors:
   primary:
-    background: '0x042139'
-    foreground: '0xdaddd4'
+    background: '0x341932'
+    foreground: '0xe5dbe2'
   cursor:
-    text: '0x042139'
-    cursor: '0xdaddd4'
+    text:       '0x341932'
+    cursor:     '0xe5dbe2'
   normal:
-    black: '0x042139'
-    red: '0x597A86'
-    green: '0x3A85A0'
-    yellow: '0x6B8E94'
-    blue: '0x99A89E'
-    magenta: '0xBBC3B4'
-    cyan: '0xCDD2AA'
-    white: '0xdaddd4'
+    black:      '0x341932'
+    red:        '0x4B85BB'
+    green:      '0x6894C6'
+    yellow:     '0xCB9CB7'
+    blue:       '0xA3A0D5'
+    magenta:    '0xD0AED6'
+    cyan:       '0xDFAEDB'
+    white:      '0xe5dbe2'
   bright:
-    black: '0x989a94'
-    red: '0x597A86'
-    green: '0x3A85A0'
-    yellow: '0x6B8E94'
-    blue: '0x99A89E'
-    magenta: '0xBBC3B4'
-    cyan: '0xCDD2AA'
-    white: '0xdaddd4'
+    black:      '0xa0999e'
+    red:        '0x4B85BB'
+    green:      '0x6894C6'
+    yellow:     '0xCB9CB7'
+    blue:       '0xA3A0D5'
+    magenta:    '0xD0AED6'
+    cyan:       '0xDFAEDB'
+    white:      '0xe5dbe2'
+
 # END ACE
 mouse_bindings:
   - { mouse: Middle, action: PasteSelection }

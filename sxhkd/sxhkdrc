@@ -2,9 +2,6 @@
 # wm independent hotkeys
 #
 
-super + Return
-	alacritty
-
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -121,3 +118,6 @@ super + space
 
 super + e
 	dbus-launch thunar
+
+super + Return
+	alacritty

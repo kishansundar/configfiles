@@ -1,7 +1,7 @@
 configuration {
 theme: "~/.cache/wal/colors-rofi-dark.rasi";
-width: 420;
-lines: 10;
+width: 300;
+lines: 5;
 columns: 1;
 show-icons: false;
 font: "Dank Mono 12";
