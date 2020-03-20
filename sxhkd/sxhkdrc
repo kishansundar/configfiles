@@ -2,13 +2,9 @@
 # wm independent hotkeys
 #
 
-# terminal emulator
 super + Return
 	alacritty
 
-# program launcher
-#super + @space
-#	dmenu_run
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -122,8 +118,6 @@ super + {Left,Down,Up,Right}
 
 super + space
 	rofi -show run
-super + e
-	thunar
 
-super + shift + l
-	bash ~/.config/xlock/i3lock.sh
+super + e
+	dbus-launch thunar
