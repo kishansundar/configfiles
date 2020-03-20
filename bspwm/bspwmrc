@@ -26,7 +26,7 @@ xset r rate 400 44
 ##########################################
 
 
-bspc monitor -d web code social movie music file lab
+bspc monitor -d web code learn music movie social tools
 
 
 ####### Rules #######
@@ -38,10 +38,9 @@ bspc rule -a discord            	desktop='social' state=pseudo_tiled follow=on
 bspc rule -a Hexchat            	desktop='social' follow=on
 bspc rule -a mpv                	desktop='movie' state=floating border=off follow=on
 bspc rule -a "Spotify"            	desktop='music' state=pseudo_tiled follow=on focus=on
-bspc rule -a "Lxappearance"       	desktop='lab' state=floating center=true focus=on
-bspc rule -a URxvt              	desktop='lab' state=floating focus=on follow=on
-bspc rule -a Thunar             	desktop='file' state=pseudo_tiled pseudo_tiled=on focus=on follow=on
-bspc rule -a File-roller        	desktop='file' state=floating center=true follow=on
+bspc rule -a "Lxappearance"       	desktop='tools' state=floating center=true focus=on
+bspc rule -a Thunar             	desktop='tools' state=pseudo_tiled pseudo_tiled=on focus=on follow=on
+bspc rule -a File-roller        	desktop='tools' state=floating center=true follow=on
 bspc rule -a feh                	state=floating
 
 
@@ -59,10 +58,10 @@ bspc config focus_follows_pointer   true
 
 bspc config border_radius       10
 bspc config border_width         1
-bspc config window_gap          10
+bspc config window_gap          15
 
 bspc config bottom_padding       0
-bspc config top_padding         30
+bspc config top_padding         40
 
 bspc config split_ratio         0.50
 bspc config borderless_monocle  true

@@ -1,10 +1,10 @@
 configuration {
 theme: "~/.cache/wal/colors-rofi-dark.rasi";
-width: 600;
-lines: 15;
+width: 420;
+lines: 10;
 columns: 1;
 show-icons: false;
-font: "Iosevka Nerd Font Mono 15";
+font: "Dank Mono 12";
 fixed-num-lines: true;
 terminal: "kitty";
 disable-history: true;
