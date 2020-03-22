@@ -96,6 +96,12 @@ URxvt*borderColor:  {background.alpha}
 *color14:  {color14}
 *.color15: {color15}
 *color15:  {color15}
+*.color256: {color0}
+*color256:  {color0}
+*.color257: {color15}
+*color257:  {color15}
+*.color258: {color15}
+*color258:  {color15}
 
 ! Black color that will not be affected by bold highlighting.
 *.color66: {color0}
