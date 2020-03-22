@@ -1,2 +1,8 @@
-colors.scheme=rainbow
-colors.override.terminal=false
+//export TERM=xterm-256color
+
+export TERM=st-256color
+audio.sources=pulse
+audio.stereo.enabled=false
+colors.scheme=main
+colors.override.terminal=true
+colors.override=true
