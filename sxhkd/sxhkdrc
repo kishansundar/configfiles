@@ -119,6 +119,10 @@ super + space
 super +  e
 	dbus-launch thunar
 
+super +  b
+	firefox
+
+
 super + alt + c
 	scrot
 
