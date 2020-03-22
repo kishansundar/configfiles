@@ -117,7 +117,7 @@ super + space
 	rofi -show run
 
 super +  e
-	dbus-launch thunar
+ thunar
 
 super +  b
 	firefox

@@ -9,6 +9,7 @@ kill $(pgrep sxhkd)
 kill $(pgrep dunst)
 kill $(pgrep autocutsel)
 kill $(pgrep polkit-gnome-authentication-agent-1)
+
 xrdb -load  ~/.cache/wal/colors.Xresources
 xrdb -load  ~/.Xresources
 sxhkd &
@@ -18,13 +19,11 @@ numlockx &
 /usr/libexec/polkit-gnome-authentication-agent-1  &
 autocutsel -s PRIMARY -fork &
 
-
 bash ~/.config/polybar/launch.sh &
 picom --config /home/kishan/.config/picom/picom.conf -b &
 feh --bg-fill --no-fehbg ~/.config/wall.png &
 wal -R &
 xsetroot -cursor_name left_ptr &
-thunar --daemon &
 xset r rate 400 44
 
 ##########################################
@@ -35,18 +34,18 @@ bspc monitor -d web code learn music movie social tools
 
 ####### Rules #######
 
-bspc rule -a "Firefox"          	desktop="web" focus=on follow=on
-bspc rule -a "VSCodium"       		desktop='code' split_dir=west split_ratio=0.66 focus=on follow=on
-bspc rule -a "Postman"       		desktop='code'  focus=on follow=on
+bspc rule -a "Firefox"            	desktop="web" focus=on follow=on
+bspc rule -a "VSCodium"         		desktop='code' split_dir=west split_ratio=0.66 focus=on follow=on
+bspc rule -a "Postman"        	  	desktop='code'  focus=on follow=on
 bspc rule -a "discord"            	desktop='social' state=floating follow=on
 bspc rule -a "Hexchat"            	desktop='social' follow=on
-bspc rule -a "mpv"                	desktop='movie' state=floating border=off follow=on
+bspc rule -a "mpv"                	desktop='movie' state=floating rectangle=1000x1000+40+75 follow=on focus=on
 bspc rule -a "Spotify"            	desktop='music' state=pseudo_tiled follow=on focus=on
 bspc rule -a "Lxappearance"       	desktop='tools' state=floating center=true focus=on follow=on
 bspc rule -a "Gnome-font-viewer"    desktop='tools' state=floating center=true focus=on follow=on
-bspc rule -a "Leafpad"       	    desktop='tools' focus=on follow=on
+bspc rule -a "Leafpad"       	      desktop='tools' focus=on follow=on
 bspc rule -a "Thunar"             	state=floating focus=on follow=on
-bspc rule -a "File-roller"       	desktop='tools' state=floating center=true follow=on
+bspc rule -a "File-roller"       	  desktop='tools' state=floating center=true follow=on
 bspc rule -a "feh"                	state=floating follow=on
 bspc rule -a "kitty"                state=floating follow=on
 
