@@ -7,7 +7,7 @@ show-icons: false;
 font: "Dank Mono 12";
 fixed-num-lines: true;
 terminal: "kitty";
-disable-history: true;
+disable-history: false;
 levenshtein-sort: true;
 matching: "fuzzy";
 hide-scrollbar: true;

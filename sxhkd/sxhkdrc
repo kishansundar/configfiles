@@ -116,8 +116,11 @@ super + {Left,Down,Up,Right}
 super + space
 	rofi -show run
 
-super + e
+super +  e
 	dbus-launch thunar
 
+super + alt + c
+	scrot
+
 super + Return
-	alacritty
+	st
