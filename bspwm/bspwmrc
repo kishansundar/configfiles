@@ -46,7 +46,7 @@ bspc rule -a "Leafpad"       	      desktop='tools' focus=on follow=on
 bspc rule -a "Thunar"             	state=floating focus=on follow=on
 bspc rule -a "File-roller"       	  desktop='tools' state=floating center=true follow=on
 bspc rule -a "feh"                	state=floating follow=on
-bspc rule -a "kitty"                state=floating follow=on
+bspc rule -a "kitty"                state=pseudo_tiled follow=on
 
 
 ######## Global Settings ########
