@@ -39,25 +39,23 @@ xset mouse 3 6 &
 ##########################################
 
 
-bspc monitor DP-0  -d  web movie music  
-bspc monitor DP-2  -d  code learn social
+bspc monitor DP-0  -d  web social folder tools movie
+bspc monitor DP-2  -d  code learn  music
 
 ####### Rules #######
 
 bspc rule -a "Firefox"            	    desktop="web" focus=on follow=on
-bspc rule -a "VSCodium"         		desktop='code' split_dir=west split_ratio=0.66 focus=on follow=on
-bspc rule -a "Postman"        	  	    desktop='code'  focus=on follow=on
 bspc rule -a "discord"            	    desktop='social' state=floating follow=on
 bspc rule -a "Hexchat"            	    desktop='social' follow=on
 bspc rule -a "mpv"                	    desktop='movie' state=floating rectangle=1000x1000+40+75 follow=on focus=on
 bspc rule -a "Spotify"            	    desktop='music' state=pseudo_tiled follow=on focus=on
-bspc rule -a "Lxappearance"       	    desktop='tools' state=floating center=true focus=on follow=on
-bspc rule -a "Leafpad"       	        desktop='tools' focus=on follow=on
+bspc rule -a "Lxappearance"       	    state=floating center=true focus=on follow=on
 bspc rule -a "Thunar"             	    state=floating focus=on follow=on
-bspc rule -a "File-roller"       	    state=floating center=true follow=on
+bspc rule -a "File-roller"       	      state=floating center=true follow=on
 bspc rule -a "feh"                	    state=floating follow=on
 bspc rule -a "kitty"                    state=pseudo_tiled follow=on
-
+bspc rule -a "VSCodium"         	  	  desktop='code' focus=on follow=on
+bspc rule -a "Postman"        	  	    desktop='code' focus=on follow=on
 
 ######## Global Settings ########
 bspc config automatic_scheme        spiral

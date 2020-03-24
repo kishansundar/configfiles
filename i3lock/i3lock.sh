@@ -24,8 +24,8 @@ i3lock \
   --clock \
   --force-clock \
   --datestr "%a, %b %d, %Y" \
-  --time-font="High speed" \
-  --date-font="High speed" \
+  --time-font="Fira Code" \
+  --date-font="Fira Code" \
   --layout-font="Dank Mono" \
     --wrong-font="Dank Mono" \
   --timesize=40 \
