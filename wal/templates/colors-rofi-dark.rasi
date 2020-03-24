@@ -5,21 +5,21 @@
     active-background: @transparent-background;
     active-foreground: @foreground;
     normal-background: @transparent-background;
-    normal-foreground: @foreground;
+    normal-foreground: {color2};
     urgent-background: @transparent-background;
     urgent-foreground: @foreground;
 
     alternate-active-background: @transparent-background;
     alternate-active-foreground: @foreground;
     alternate-normal-background: @transparent-background;
-    alternate-normal-foreground: @foreground;
+    alternate-normal-foreground: {color2};
     alternate-urgent-background: @transparent-background;
     alternate-urgent-foreground: @foreground;
 
     selected-active-background: {color1};
     selected-active-foreground: @foreground;
     selected-normal-background: @transparent-background;
-    selected-normal-foreground: {color2};
+    selected-normal-foreground: @foreground;
     selected-urgent-background: {color3};
     selected-urgent-foreground: @foreground;
 
