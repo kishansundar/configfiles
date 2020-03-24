@@ -18,7 +18,7 @@ if [ -x /home/kishan/.config/bspwm/xrand.sh ];then
 fi
 
 sxhkd &
-dunst &
+dunst &S
 numlockx &
 
 /usr/libexec/polkit-gnome-authentication-agent-1  &
@@ -29,7 +29,7 @@ if [ -x /usr/bin/polybar ]; then
 fi
 
 picom --config /home/kishan/.config/picom/picom.conf -b &
-feh --bg-fill --no-fehbg ~/.config/wall.png &
+feh --bg-fill --no-xinerama ~/.config/wall.png &
 wal -R &
 xsetroot -cursor_name left_ptr &
 xset r rate 400 44 &
@@ -37,12 +37,12 @@ xset mouse 3 6 &
 ##########################################
 
 
-bspc monitor DP-0  -d  web social folder tools movie
-bspc monitor DP-2  -d  code learn  music
+bspc monitor DP-0  -d  firefox social folder tools movie
+bspc monitor DP-2  -d  chromium code learn  music
 
 ####### Rules #######
 
-bspc rule -a "Firefox"            	    desktop="web" focus=on follow=on
+bspc rule -a "Firefox"            	    desktop="firefox" focus=on follow=on
 bspc rule -a "discord"            	    desktop='social' state=floating follow=on
 bspc rule -a "Hexchat"            	    desktop='social' follow=on
 bspc rule -a "mpv"                	    desktop='movie' state=floating rectangle=1000x1000+40+75 follow=on focus=on
@@ -68,11 +68,11 @@ bspc config focus_follows_pointer   true
 ######## Borders and Gaps ########
 
 bspc config border_radius       50
-bspc config border_width         0
-bspc config window_gap          30
+bspc config border_width         1
+bspc config window_gap          25
 
 bspc config bottom_padding       0
-bspc config top_padding         45
+bspc config top_padding         40
 
 bspc config split_ratio         0.50
 bspc config borderless_monocle  true
@@ -89,9 +89,4 @@ bspc config normal_border_color   \${xrdb:color0:\#222}
 bspc config active_border_color   \${xrdb:color0:\#222}
 bspc config focused_border_color  \${xrdb:color0:\#222}
 bspc config presel_feedback_color \${xrdb:color0:\#222}
-
-
-
-
-
 

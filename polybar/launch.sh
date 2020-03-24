@@ -1,8 +1,5 @@
 #!/usr/bin/env sh
-
-# Terminate already running bar instances
-killall -q polybar
-
+kill $(pgrep polybay)
 
 polybar DP0 -c ~/.config/polybar/config.ini &
 
@@ -11,7 +8,6 @@ my_external_monitor=$(xrandr --query | grep 'DP-0')
 if [[ $my_external_monitor = *connected* ]]; then
    polybar DP2 -c ~/.config/polybar/config.ini &
 fi
-
 
 
 
