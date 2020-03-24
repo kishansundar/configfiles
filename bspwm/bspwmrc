@@ -23,8 +23,8 @@ picom --config /home/kishan/.config/picom/picom.conf -b &
 feh --bg-fill --no-fehbg ~/.config/wall.png &
 wal -R &
 xsetroot -cursor_name left_ptr &
-xset r rate 400 44
-
+xset r rate 400 44 &
+xset mouse 3 6 &
 ##########################################
 
 
