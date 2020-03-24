@@ -3,14 +3,22 @@
 
 bspc rule -r "*"
 
+
+
 kill $(pgrep picom)
 kill $(pgrep polybar)
 kill $(pgrep sxhkd)
 kill $(pgrep dunst)
 kill $(pgrep autocutsel)
 kill $(pgrep polkit-gnome-authentication-agent-1)
+kill $(pgrep xrandr)
 
-xrdb -load  ~/.cache/wal/colors.Xresources
+xrdb -load  ~/.cache/wal/colors.Xresources &
+
+if [ -x /home/kishan/.config/bspwm/xrand.sh ];then
+  bash /home/kishan/.config/bspwm/xrand.sh &
+fi
+
 sxhkd &
 dunst &
 numlockx &
@@ -18,7 +26,10 @@ numlockx &
 /usr/libexec/polkit-gnome-authentication-agent-1  &
 autocutsel -s PRIMARY -fork &
 
-bash ~/.config/polybar/launch.sh &
+if [ -x /usr/bin/polybar ]; then
+    bash $HOME/.config/polybar/launch.sh &
+fi
+
 picom --config /home/kishan/.config/picom/picom.conf -b &
 feh --bg-fill --no-fehbg ~/.config/wall.png &
 wal -R &
@@ -28,25 +39,24 @@ xset mouse 3 6 &
 ##########################################
 
 
-bspc monitor -d web code learn music movie social tools
-
+bspc monitor DP-0  -d  web movie music  
+bspc monitor DP-2  -d  code learn social
 
 ####### Rules #######
 
-bspc rule -a "Firefox"            	desktop="web" focus=on follow=on
+bspc rule -a "Firefox"            	    desktop="web" focus=on follow=on
 bspc rule -a "VSCodium"         		desktop='code' split_dir=west split_ratio=0.66 focus=on follow=on
-bspc rule -a "Postman"        	  	desktop='code'  focus=on follow=on
-bspc rule -a "discord"            	desktop='social' state=floating follow=on
-bspc rule -a "Hexchat"            	desktop='social' follow=on
-bspc rule -a "mpv"                	desktop='movie' state=floating rectangle=1000x1000+40+75 follow=on focus=on
-bspc rule -a "Spotify"            	desktop='music' state=pseudo_tiled follow=on focus=on
-bspc rule -a "Lxappearance"       	desktop='tools' state=floating center=true focus=on follow=on
-bspc rule -a "Gnome-font-viewer"    desktop='tools' state=floating center=true focus=on follow=on
-bspc rule -a "Leafpad"       	      desktop='tools' focus=on follow=on
-bspc rule -a "Thunar"             	state=floating focus=on follow=on
-bspc rule -a "File-roller"       	  desktop='tools' state=floating center=true follow=on
-bspc rule -a "feh"                	state=floating follow=on
-bspc rule -a "kitty"                state=pseudo_tiled follow=on
+bspc rule -a "Postman"        	  	    desktop='code'  focus=on follow=on
+bspc rule -a "discord"            	    desktop='social' state=floating follow=on
+bspc rule -a "Hexchat"            	    desktop='social' follow=on
+bspc rule -a "mpv"                	    desktop='movie' state=floating rectangle=1000x1000+40+75 follow=on focus=on
+bspc rule -a "Spotify"            	    desktop='music' state=pseudo_tiled follow=on focus=on
+bspc rule -a "Lxappearance"       	    desktop='tools' state=floating center=true focus=on follow=on
+bspc rule -a "Leafpad"       	        desktop='tools' focus=on follow=on
+bspc rule -a "Thunar"             	    state=floating focus=on follow=on
+bspc rule -a "File-roller"       	    state=floating center=true follow=on
+bspc rule -a "feh"                	    state=floating follow=on
+bspc rule -a "kitty"                    state=pseudo_tiled follow=on
 
 
 ######## Global Settings ########
@@ -75,6 +85,9 @@ bspc config click_to_focus      true
 bspc config gapless_monocle       false
 bspc config paddingless_monocle   false
 bspc config single_monocle        true
+
+bspc config remove_disabled_monitors true
+bspc config remove_unplugged_monitors true
 
 bspc config normal_border_color   \${xrdb:color0:\#222}
 bspc config active_border_color   \${xrdb:color0:\#222}
