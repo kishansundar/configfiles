@@ -1,6 +1,8 @@
 #
 # wm independent hotkeys
 #
+super + Return
+	st
 
 
 # make sxhkd reload its configuration files:
@@ -17,7 +19,7 @@ super + alt + {q,r}
 
 # close and kill
 super + {_,shift + }q
-	bspc node -{c,k}
+	bspc node -{k,k}
 
 # alternate between the tiled and monocle layout
 super + m
@@ -119,12 +121,3 @@ super + space
 super +  e
  thunar
 
-super +  b
-	firefox
-
-
-super + alt + c
-	scrot
-
-super + Return
-	st

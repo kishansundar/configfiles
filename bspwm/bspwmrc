@@ -1,6 +1,7 @@
 #! /bin/sh
 ############## Autostart ##############
 
+
 bspc rule -r "*"
 
 kill $(pgrep picom)
@@ -69,12 +70,12 @@ bspc config remove_unplugged_monitors true
 
 ######## Borders and Gaps ########
 
-bspc config border_radius       50
+bspc config border_radius       10
 bspc config border_width         1
-bspc config window_gap          25
+bspc config window_gap          10
 
 bspc config bottom_padding       0
-bspc config top_padding         40
+bspc config top_padding         30
 
 bspc config split_ratio         0.50
 bspc config borderless_monocle  true
