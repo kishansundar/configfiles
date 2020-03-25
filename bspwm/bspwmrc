@@ -11,7 +11,7 @@ kill $(pgrep polkit-gnome-authentication-agent-1)
 kill $(pgrep xrandr)
 
 xrdb -load  ~/.cache/wal/colors.Xresources &
-feh --bg-fill ~/.config/wall.png &
+
 
 if [ -x /home/kishan/.config/bspwm/xrand.sh ];then
   bash /home/kishan/.config/bspwm/xrand.sh &
@@ -35,6 +35,7 @@ polybar DP0 -c ~/.config/polybar/config.ini &
 
 
 wal -R &
+feh --bg-scale --no-xinerama  ~/.config/wall.png &
 
 xsetroot -cursor_name left_ptr &
 xset r rate 400 44 &
