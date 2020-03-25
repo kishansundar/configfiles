@@ -57,13 +57,15 @@ bspc rule -a "Postman"        	  	    desktop='code' focus=on follow=on
 
 ######## Global Settings ########
 bspc config automatic_scheme        spiral
-bspc config pointer_modifier        shift
+bspc config pointer_modifier        mod
 bspc config pointer_action1         move
 bspc config pointer_action2         resize_side
 bspc config pointer_action3         resize_corner
 
 bspc config focus_follows_pointer   true
 
+bspc config remove_disabled_monitors  true
+bspc config remove_unplugged_monitors true
 
 ######## Borders and Gaps ########
 
