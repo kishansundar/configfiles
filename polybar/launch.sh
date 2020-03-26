@@ -1,5 +1,4 @@
 #!/usr/bin/env sh
-kill $(pgrep polybay)
 
    polybar DP2 -c ~/.config/polybar/config.ini &
 

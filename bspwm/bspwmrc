@@ -10,8 +10,6 @@ kill $(pgrep autocutsel)
 kill $(pgrep polkit-gnome-authentication-agent-1)
 kill $(pgrep xrandr)
 
-xrdb -load  ~/.cache/wal/colors.Xresources &
-
 
 if [ -x /home/kishan/.config/bspwm/xrand.sh ];then
   bash /home/kishan/.config/bspwm/xrand.sh &
@@ -20,32 +18,30 @@ fi
 sxhkd &
 dunst &S
 numlockx &
+picom --config /home/kishan/.config/picom/picom.conf -b &
+
+
 
 /usr/libexec/polkit-gnome-authentication-agent-1  &
+
 autocutsel -s PRIMARY -fork &
 
 if [ -x /usr/bin/polybar ]; then
     bash $HOME/.config/polybar/launch.sh &
 fi
 
-picom --config /home/kishan/.config/picom/picom.conf -b &
-
-polybar DP2 -c ~/.config/polybar/config.ini &
-polybar DP0 -c ~/.config/polybar/config.ini &
-
-
-wal -R &
 feh --bg-scale --no-xinerama  ~/.config/wall.png &
 
+xrdb -load  ~/.cache/wal/colors.Xresources &
 xsetroot -cursor_name left_ptr &
 xset r rate 400 44 &
 xset mouse 3 6 &
+
+wal -R &
 ##########################################
 
-
-
-bspc monitor DP-2  -d  chromium code learn music movie
-bspc monitor DP-0  -d  firefox social
+bspc monitor DP-2  -d  chromium terminal code learn movie
+bspc monitor DP-0  -d  firefox social music
 
 ####### Rules #######
 
